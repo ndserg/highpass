@@ -1,0 +1,137 @@
+.project {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  height: 100%;
+
+  &::after {
+    @include badge(5px, 5px, 4px, 14px, 4px, 14px);
+  }
+}
+
+.project__img {
+  display: block;
+
+  width: 100%;
+  height: 184px;
+  margin-bottom: 18px;
+
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.project__descr {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 137%;
+  color: $black-brown;
+
+  &--full {
+    display: none;
+  }
+}
+
+.project__date {
+  display: flex;
+
+  column-gap: 4px;
+
+  align-items: center;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: auto;
+
+  font-size: 12px;
+  font-weight: 400;
+  color: $pearlescent-light-gray;
+}
+
+.project__date-icon {
+  width: 14px;
+  height: 14px;
+
+  fill: $pearlescent-light-gray;
+}
+
+@media (min-width: $tablet-width) {
+  .project {
+    &::after {
+      @include badge(7px, 7px, 6px, 14px, 5px, 14px);
+    }
+  }
+
+  .projects__item:nth-child(5),
+  .projects__item:nth-child(6) {
+    .project__descr {
+      margin-bottom: 17px;
+    }
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .project {
+    overflow: hidden;
+
+    &::after {
+      @include badge(7px, 8px, 7px, 14px, 5px, 14px);
+    }
+  }
+
+  .projects__item:nth-child(3) {
+    .project__img {
+      width: 110%;
+      max-width: unset;
+
+      object-position: -15px 88%;
+    }
+  }
+
+  .project__descr {
+    display: none;
+
+    margin-bottom: 18px;
+
+    &--full {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .project {
+    overflow: initial;
+  }
+
+  .projects__item:nth-child(3) {
+    .project__img {
+      width: 100%;
+      max-width: 100%;
+
+      object-position: 50% 50%;
+    }
+  }
+
+  .project__descr {
+    display: block;
+
+    margin-bottom: 10px;
+
+    &--full {
+      display: none;
+    }
+  }
+
+  .projects__item:nth-child(5),
+  .projects__item:nth-child(6) {
+    .project__descr {
+      margin-bottom: 10px;
+    }
+  }
+}

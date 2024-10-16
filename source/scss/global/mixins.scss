@@ -1,0 +1,25 @@
+@mixin badge($top, $right, $p-t, $p-r, $p-b, $p-l) {
+  position: absolute;
+  top: $top;
+  right: $right;
+
+  display: block;
+
+  padding-top: $p-t;
+  padding-right: $p-r;
+  padding-bottom: $p-b;
+  padding-left: $p-l;
+
+  font-size: 12px;
+  font-weight: 400;
+  color: $white;
+  text-align: center;
+
+  content: attr(data-badge);
+
+  background-color: $black-brown;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
+}

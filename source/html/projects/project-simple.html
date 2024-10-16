@@ -1,0 +1,22 @@
+<article class="project" data-badge="#@@badge">
+  <h3 class="visually-hidden">@@badge</h3>
+  <picture>
+    <source srcset="@img/@@image.webp 1x, @img/@@image@2x.webp 2x" type="image/webp">
+    <img class="project__img" src="@img/@@image.jpg" srcset="@img/@@image@2x.jpg 2x" width="278" height="184" alt="@@badge">
+  </picture>
+
+  <p class="project__descr">
+    @@descr
+  </p>
+
+  <p class="project__descr project__descr--full">
+    @@fullDescr
+  </p>
+
+  <time class="project__date" datetime="@@dateString">
+    <svg class="project__date-icon" width="14" height="14" aria-hidden="true">
+      <use xlink:href="@img/icons/sprite.svg#icon-calendar"></use>
+    </svg>
+    @@date
+  </time>
+</article>

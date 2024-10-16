@@ -1,0 +1,38 @@
+.intro__columns {
+  display: grid;
+
+  grid-template-rows: 422px 1fr;
+  grid-template-columns: 1fr;
+
+  row-gap: 34px;
+}
+
+.intro__column-left {
+  color: $white;
+}
+
+@media (min-width: $pre-tablet-width) {
+  .intro__columns {
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: $gap;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro__columns {
+    grid-template-rows: 452px;
+  }
+}
+
+@media (min-width: $tablet-large) {
+  .intro__columns {
+    grid-template-rows: 623px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__columns {
+    grid-template-rows: 630px;
+  }
+}

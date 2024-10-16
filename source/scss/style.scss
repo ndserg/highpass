@@ -1,0 +1,22 @@
+// Global
+@import "fonts";
+@import "global/normalize";
+@import "global/variables";
+@import "global/global";
+@import "global/ui-kit";
+@import "global/mixins";
+
+// Blocks
+@import "blocks/header";
+@import "blocks/page-main";
+@import "blocks/intro/intro";
+@import "blocks/intro/promo";
+@import "blocks/intro/members";
+@import "blocks/about";
+@import "blocks/projects/projects";
+@import "blocks/projects/project-simple";
+@import "blocks/projects/project-big";
+@import "blocks/contacts/contacts";
+@import "blocks/contacts/contacts-map";
+@import "blocks/contacts/contacts-form";
+@import "blocks/footer";
